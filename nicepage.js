@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
                 const galleryItem = document.createElement('div');
                 galleryItem.className = 'gallery-item';
-                
+
                 const anchor = document.createElement('a');
                 anchor.href = link;
                 anchor.target = '_blank';
@@ -27,8 +27,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 galleryItem.appendChild(anchor);
                 gallery.appendChild(galleryItem);
             })
-   .catch(error => {
+   })   .catch(error => {
         console.error('Veri alımı sırasında hata oluştu:', error);
-        alert('Veri alımı sırasında bir hata oluştu. Lütfen daha sonra tekrar deneyin.');
-        });
+        alert(error);
+        }); 
 });
