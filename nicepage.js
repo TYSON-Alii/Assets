@@ -26,6 +26,9 @@ document.addEventListener('DOMContentLoaded', () => {
                 anchor.appendChild(p);
                 galleryItem.appendChild(anchor);
                 gallery.appendChild(galleryItem);
-            });
+            })
+   .catch(error => {
+        console.error('Veri alımı sırasında hata oluştu:', error);
+        alert('Veri alımı sırasında bir hata oluştu. Lütfen daha sonra tekrar deneyin.');
         });
 });
