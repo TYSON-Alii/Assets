@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-    fetch('data.csv')
+    fetch(url('https://github.com/TYSON-Alii/Assets/raw/main/data.csv')) 
         .then(response => response.text())
         .then(data => {
             const gallery = document.getElementById('gallery');
