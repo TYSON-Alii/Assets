@@ -3,6 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
         .then(response => response.text())
         .then(data => {
             const gallery = document.getElementById('gallery');
+            alert('deneme') 
             const rows = data.split('\n').slice(1); // İlk satırı (başlık) geç
 
             rows.forEach(row => {
