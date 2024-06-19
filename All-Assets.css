@@ -5,7 +5,7 @@
     font-style: normal;
 }
 body {
-    font-family: 'CustomFont';
+    font-family: 'CustomFont', Arial, sans-serif;
     background-color: #0c0d1a;
     margin: 0;
     padding: 20px;
