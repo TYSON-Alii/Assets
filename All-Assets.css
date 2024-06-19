@@ -1,358 +1,116 @@
- .u-section-1 {
-  background-image: linear-gradient(215deg, #f2f2f2, #858e99);
+@font-face {
+    font-family: 'CustomFont';
+    src: url('https://github.com/TYSON-Alii/TYSON-Alii.github.io/raw/09d600d76e83079e966a5920841187416b56f5da/font.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+body {
+    font-family: 'CustomFont';
+    background-color: #0c0d1a;
+    margin: 0;
+    padding: 20px;
 }
 
-.u-section-1 .u-sheet-1 {
-  min-height: 1107px;
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
-.u-section-1 .u-text-1 {
-  width: 682px;
-  font-family: Aleo;
-  margin: 27px auto 0;
+.gallery-item {
+    width: 300px;
+    margin: 20px;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.2s;
 }
 
-.u-section-1 .u-text-2 {
-  font-family: Aleo;
-  width: 682px;
-  margin: 0 auto;
+.gallery-item img {
+    width:300px;
+    height: 100%;
+    object-fit: object-fit;
+    image-rendering: -webkit-optimize-contrast; /* Safari için */
+    image-rendering: pixelated; /* Diğer tarayıcılar için */
 }
 
-.u-section-1 .u-gallery-1 {
-  height: 833px;
-  width: 1164px;
-  margin: 2px -12px 0;
+.gallery-item p {
+    margin: 10px 0 0 0;
+    font-size: 16px;
+    color: #787878;
+    filter: grayscale(100%); /* Metin rengi koyu gri */
 }
 
-.u-section-1 .u-gallery-inner-1 {
-  grid-template-columns: repeat(4, auto);
-  grid-gap: 50px;
+.gallery-item:hover {
+    transform: scale(1.05);
 }
 
-.u-section-1 .u-over-slide-1 {
-  background-image: linear-gradient(0deg, rgba(0,0,0,0.2), rgba(0,0,0,0.2));
-  padding: 20px;
+.gallery-item a {
+    text-decoration: none;
+    color: inherit;
 }
 
-.u-section-1 .u-over-slide-2 {
-  background-image: linear-gradient(0deg, rgba(0,0,0,0.2), rgba(0,0,0,0.2));
-  padding: 20px;
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.8);
 }
 
-.u-section-1 .u-over-slide-3 {
-  background-image: linear-gradient(0deg, rgba(0,0,0,0.2), rgba(0,0,0,0.2));
-  padding: 20px;
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
 }
 
-.u-section-1 .u-over-slide-4 {
-  background-image: linear-gradient(0deg, rgba(0,0,0,0.2), rgba(0,0,0,0.2));
-  padding: 20px;
+.close {
+    position: absolute;
+    top: 20px;
+    right: 35px;
+    color: #fff;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
 }
 
-.u-section-1 .u-over-slide-5 {
-  background-image: linear-gradient(0deg, rgba(0,0,0,0.2), rgba(0,0,0,0.2));
-  padding: 20px;
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
 }
 
-.u-section-1 .u-over-slide-6 {
-  background-image: linear-gradient(0deg, rgba(0,0,0,0.2), rgba(0,0,0,0.2));
-  padding: 20px;
+/* Footer Stilleri */
+footer {
+    background-color: #fff; /* Arka plan rengi beyaz */
+    color: #333; /* Metin rengi koyu gri */
+    padding: 20px;
+    text-align: center;
 }
 
-.u-section-1 .u-over-slide-7 {
-  background-image: linear-gradient(0deg, rgba(0,0,0,0.2), rgba(0,0,0,0.2));
-  padding: 20px;
+/* Footer içerisindeki bağlantılar için stiller */
+/* Footer Stilleri */
+footer {
+    background-color: #140036; /* Arka plan rengi beyaz */
+    color: #b0b0b0; /* Metin rengi koyu gri */
+    padding: 20px;
+    text-align: center;
+    position: fixed; /* Sayfanın en altında sabitlenmesi */
+    bottom: 0; /* Alt kenara yapıştırma */
+    width: 100%; /* Genişlik tam ekran olacak */
+    z-index: 1000; /* Diğer içeriklerin üstünde kalacak */
 }
 
-.u-section-1 .u-over-slide-8 {
-  background-image: linear-gradient(0deg, rgba(0,0,0,0.2), rgba(0,0,0,0.2));
-  padding: 20px;
+footer a {
+    color: #659fe0; /* Link rengi kırmızı */
+    text-decoration: none;
 }
 
-.u-section-1 .u-over-slide-9 {
-  background-image: linear-gradient(0deg, rgba(0,0,0,0.2), rgba(0,0,0,0.2));
-  padding: 20px;
-}
-
-.u-section-1 .u-over-slide-10 {
-  background-image: linear-gradient(0deg, rgba(0,0,0,0.2), rgba(0,0,0,0.2));
-  padding: 20px;
-}
-
-.u-section-1 .u-over-slide-11 {
-  background-image: linear-gradient(0deg, rgba(0,0,0,0.2), rgba(0,0,0,0.2));
-  padding: 20px;
-}
-
-.u-section-1 .u-over-slide-12 {
-  background-image: linear-gradient(0deg, rgba(0,0,0,0.2), rgba(0,0,0,0.2));
-  padding: 20px;
-}
-
-.u-section-1 .u-gallery-item-13 {
-  margin: 183px 0 0;
-}
-
-.u-section-1 .u-over-slide-13 {
-  background-image: linear-gradient(0deg, rgba(0,0,0,0.2), rgba(0,0,0,0.2));
-  padding: 20px;
-}
-
-@media (max-width: 1199px) {
-  .u-section-1 .u-sheet-1 {
-    min-height: 947px;
-  }
-
-  .u-section-1 .u-gallery-1 {
-    width: 940px;
-    margin-left: 0;
-    margin-right: 0;
-    height: 673px;
-  }
-}
-
-@media (max-width: 991px) {
-  .u-section-1 .u-sheet-1 {
-    min-height: 2336px;
-  }
-
-  .u-section-1 .u-text-2 {
-    margin-top: 2703px;
-    margin-left: 229px;
-    margin-right: 229px;
-  }
-
-  .u-section-1 .u-gallery-1 {
-    width: 720px;
-    margin-top: -2702px;
-    margin-left: 190px;
-    height: 2062px;
-  }
-
-  .u-section-1 .u-gallery-inner-1 {
-    grid-template-columns: repeat(2, auto);
-  }
-
-  .u-section-1 .u-gallery-item-13 {
-    margin: 828px 210px 60px;
-  }
-}
-
-@media (max-width: 767px) {
-  .u-section-1 .u-sheet-1 {
-    min-height: 6460px;
-  }
-
-  .u-section-1 .u-text-1 {
-    width: 540px;
-  }
-
-  .u-section-1 .u-text-2 {
-    width: 540px;
-    margin-top: 6870px;
-    margin-left: 300px;
-    margin-right: 300px;
-  }
-
-  .u-section-1 .u-gallery-1 {
-    width: 540px;
-    margin-top: -6869px;
-    margin-left: 300px;
-    height: 6186px;
-  }
-
-  .u-section-1 .u-gallery-inner-1 {
-    grid-template-columns: repeat(1, auto);
-  }
-
-  .u-section-1 .u-gallery-item-13 {
-    margin-top: -40px;
-    margin-left: 300px;
-    margin-right: 300px;
-  }
-}
-
-@media (max-width: 575px) {
-  .u-section-1 .u-sheet-1 {
-    min-height: 4169px;
-  }
-
-  .u-section-1 .u-text-1 {
-    width: 340px;
-  }
-
-  .u-section-1 .u-text-2 {
-    width: 340px;
-    margin-top: 4809px;
-    margin-left: 400px;
-    margin-right: 400px;
-  }
-
-  .u-section-1 .u-gallery-1 {
-    width: 340px;
-    height: 3895px;
-    margin-top: -4807px;
-    margin-right: auto;
-    margin-left: -12px;
-  }
-
-  .u-section-1 .u-gallery-item-13 {
-    margin-top: -685px;
-    margin-left: 400px;
-    margin-right: 400px;
-  }
-} .u-section-2 {
-  background-image: linear-gradient(135deg, #858e99, #f2f2f2);
-}
-
-.u-section-2 .u-sheet-1 {
-  min-height: 1107px;
-}
-
-.u-section-2 .u-text-1 {
-  width: 682px;
-  font-family: Aleo;
-  margin: 27px auto 0;
-}
-
-.u-section-2 .u-gallery-1 {
-  height: 244px;
-  width: 558px;
-  margin: 28px auto 0 -12px;
-}
-
-.u-section-2 .u-gallery-inner-1 {
-  grid-template-columns: repeat(2, auto);
-  grid-gap: 50px;
-}
-
-.u-section-2 .u-over-slide-1 {
-  background-image: linear-gradient(0deg, rgba(0,0,0,0.2), rgba(0,0,0,0.2));
-  padding: 20px;
-}
-
-.u-section-2 .u-over-slide-2 {
-  background-image: linear-gradient(0deg, rgba(0,0,0,0.2), rgba(0,0,0,0.2));
-  padding: 20px;
-}
-
-.u-section-2 .u-text-2 {
-  font-family: Aleo;
-  margin: 39px 249px 0 209px;
-}
-
-.u-section-2 .u-gallery-item-3 {
-  margin: 108px 0 0;
-}
-
-.u-section-2 .u-over-slide-3 {
-  background-image: linear-gradient(0deg, rgba(0,0,0,0.2), rgba(0,0,0,0.2));
-  padding: 20px;
-}
-
-.u-section-2 .u-gallery-2 {
-  height: 244px;
-  width: 259px;
-  margin: -75px auto 60px -12px;
-}
-
-.u-section-2 .u-gallery-inner-2 {
-  grid-template-columns: repeat(1, auto);
-  grid-gap: 50px;
-}
-
-.u-section-2 .u-over-slide-4 {
-  background-image: linear-gradient(0deg, rgba(0,0,0,0.2), rgba(0,0,0,0.2));
-  padding: 20px;
-}
-
-@media (max-width: 1199px) {
-  .u-section-2 .u-text-2 {
-    width: 682px;
-    margin-left: 109px;
-    margin-right: 149px;
-  }
-}
-
-@media (max-width: 991px) {
-  .u-section-2 .u-sheet-1 {
-    min-height: 2571px;
-  }
-
-  .u-section-2 .u-gallery-1 {
-    height: 976px;
-    margin-top: 27px;
-    margin-left: 190px;
-  }
-
-  .u-section-2 .u-gallery-inner-1 {
-    grid-template-columns: repeat(1, auto);
-  }
-
-  .u-section-2 .u-text-2 {
-    margin-top: 373px;
-    margin-left: 0;
-    margin-right: 38px;
-  }
-
-  .u-section-2 .u-gallery-item-3 {
-    margin-top: 419px;
-    margin-left: 210px;
-    margin-right: 210px;
-  }
-}
-
-@media (max-width: 767px) {
-  .u-section-2 .u-sheet-1 {
-    min-height: 2509px;
-  }
-
-  .u-section-2 .u-text-1 {
-    width: 540px;
-  }
-
-  .u-section-2 .u-gallery-1 {
-    width: 540px;
-    height: 945px;
-    margin-left: 300px;
-  }
-
-  .u-section-2 .u-text-2 {
-    width: 540px;
-    margin-top: -495px;
-    margin-right: 0;
-  }
-
-  .u-section-2 .u-gallery-item-3 {
-    margin-left: 300px;
-    margin-right: 300px;
-  }
-}
-
-@media (max-width: 575px) {
-  .u-section-2 .u-sheet-1 {
-    min-height: 1809px;
-  }
-
-  .u-section-2 .u-text-1 {
-    width: 340px;
-  }
-
-  .u-section-2 .u-gallery-1 {
-    width: 340px;
-    height: 595px;
-    margin-top: 84px;
-    margin-left: 400px;
-  }
-
-  .u-section-2 .u-text-2 {
-    width: 340px;
-    margin-top: -1196px;
-  }
-
-  .u-section-2 .u-gallery-item-3 {
-    margin-top: 426px;
-    margin-left: 400px;
-    margin-right: 400px;
-  }
+footer a:hover {
+    text-decoration: underline; /* Üzerine gelindiğinde bağlantı altı çizgisi */
 }
