@@ -6,7 +6,6 @@ document.addEventListener('DOMContentLoaded', () => {
     fetch('https://raw.githubusercontent.com/TYSON-Alii/Assets/main/data.csv')
         .then(response => response.text())
         .then(data => {
-            alert('Welcome! dear adventurer.');
             const gallery = document.getElementById('gallery');
             
             const rows = data.split('\n').slice(1); // İlk satırı (başlık) geç
