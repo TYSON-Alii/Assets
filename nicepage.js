@@ -1,3 +1,7 @@
+function isStringEmpty(str) {
+  return (!str || str.trim() === "");
+}
+
 document.addEventListener('DOMContentLoaded', () => {
     fetch('https://raw.githubusercontent.com/TYSON-Alii/Assets/main/data.csv')
         .then(response => response.text())
@@ -8,6 +12,9 @@ document.addEventListener('DOMContentLoaded', () => {
             const rows = data.split('\n').slice(1); // İlk satırı (başlık) geç
 
             rows.forEach(row => {
+															if (isStringEmpty(row)) {
+ 																return;
+															} 
                 const [imageUrl, description, link] = row.split(',');
 
                 const galleryItem = document.createElement('div');
