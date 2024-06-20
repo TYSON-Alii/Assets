@@ -12,9 +12,10 @@ document.addEventListener('DOMContentLoaded', () => {
             const rows = data.split('\n').slice(1); // İlk satırı (başlık) geç
 
             rows.forEach(row => {
-															if (isStringEmpty(row)) {
- 																return;
-															} 
+                if (isStringEmpty(row)) {
+                 alert('bos amik xD');
+                 return;
+                } 
                 const [imageUrl, description, link] = row.split(',');
 
                 const galleryItem = document.createElement('div');
