@@ -22,8 +22,7 @@ body {
 
 .gallery-item img {
     width:300px;
-    height: 100%;
-    object-fit: object-fit;
+    object-fit: cover;
     image-rendering: -webkit-optimize-contrast; /* Safari için */
     image-rendering: pixelated; /* Diğer tarayıcılar için */
 }
