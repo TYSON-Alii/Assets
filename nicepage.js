@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 const img = document.createElement('img');
                 img.src = imageUrl.trim();
                 img.alt = description.trim();
-
+                alert(img.alt);
                 const p = document.createElement('p');
                 p.textContent = description.trim();
 
