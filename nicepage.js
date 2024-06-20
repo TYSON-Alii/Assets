@@ -42,4 +42,16 @@ document.addEventListener('DOMContentLoaded', () => {
         console.error('Veri alımı sırasında hata oluştu:', error);
         alert(error);
         }); 
+  Swal.fire({
+  title: "Welcome! dear Adventurer.",
+  position:"top",
+  width: 350,
+  confirmButtonColor: "#00000030",
+  padding: "3em",
+  color: "#ffffff",
+  background: `
+  #1c112b
+   url(https://raw.githubusercontent.com/TYSON-Alii/Assets/0fd42afec5b4dcdef4dde44188891786ff3bc441/fallstar.gif)
+  no-repeat`,
+  });
 });
