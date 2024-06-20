@@ -2,6 +2,7 @@ document.addEventListener('DOMContentLoaded', () => {
     fetch('https://raw.githubusercontent.com/TYSON-Alii/Assets/1c5643def1d926da9b911d95d20e2b66496a9e1c/data.csv')
         .then(response => response.text())
         .then(data => {
+            alert('selamin aleyk');
             const gallery = document.getElementById('gallery');
             
             const rows = data.split('\n').slice(1); // İlk satırı (başlık) geç
