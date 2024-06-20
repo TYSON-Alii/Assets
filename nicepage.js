@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
             rows.forEach(row => {
                 if (isStringEmpty(row)) {
-                 alert('bos amik xD');
+                 
                  return;
                 } 
                 const [imageUrl, description, link] = row.split(',');
