@@ -23,6 +23,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 const p = document.createElement('p');
                 p.textContent = description.trim();
 
+                
                 anchor.appendChild(img);
                 anchor.appendChild(p);
                 galleryItem.appendChild(anchor);
